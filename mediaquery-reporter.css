@@ -1,7 +1,7 @@
 /* ======================================
 
 	CSS3 Media Query Reporter
-	  v. 1.0
+	  v. 1.0.1
 	  by David Cochran - aLittleCode.com
 
 ========================================= */
@@ -12,7 +12,7 @@ body:after {
 	line-height: 1;
 	font-weight: bold;
 	position: fixed;
-	bottom: 0;
+	bottom: 40px;
 	width: 100%;
 	padding: 5px 0;
 	text-align: center;
@@ -28,25 +28,43 @@ body:after {
 }
 @media only screen and (min-width: 480px) {
 	body:after {
-		content: "480 to 768px";
+		content: "480 to 640px";
 		background-color: hsla(180,60%,40%,0.7);
 	}
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 640px) {
 	body:after {
-		content: "768 to 1024px";
+		content: "640 to 800px";
 		background-color: hsla(270,60%,40%,0.7);
 	}
 }
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 800px) {
 	body:after {
-		content: "1024 to 1360px";
+		content: "800 to 960px";
 		background-color: hsla(360,60%,40%,0.7);
 	}
 }
-@media only screen and (min-width: 1360px) {
+@media only screen and (min-width: 960px) {
 	body:after {
-		content: "1360 and up";
+		content: "960 to 1120px";
 		background-color: hsla(90,60%,40%,0.7);
+	}
+}
+@media only screen and (min-width: 1120px) {
+	body:after {
+		content: "1120 to 1280px";
+		background-color: hsla(180,60%,40%,0.7);
+	}
+}
+@media only screen and (min-width: 1280px) {
+	body:after {
+		content: "1280 to 1440px";
+		background-color: hsla(270,60%,40%,0.7);
+	}
+}
+@media only screen and (min-width: 1440px) {
+	body:after {
+		content: "1440 and up";
+		background-color: hsla(270,60%,40%,0.7);
 	}
 }
